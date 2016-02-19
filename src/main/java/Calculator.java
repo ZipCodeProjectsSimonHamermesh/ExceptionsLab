@@ -15,7 +15,8 @@ public class Calculator{
         return x*y;
     }
 
-    public static int divide(int x, int y)  {
+    public static int divide(int x, int y) throws Exception {
+        if(y ==0){throw new Exception();}
         return x/y;
     }
 
