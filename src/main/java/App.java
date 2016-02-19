@@ -16,14 +16,14 @@ public class App {
 
         try{
             System.out.println(Calculator.divide(4,2));
-        } catch (Exception  e){
+        } catch (DivisionByZeroException  e){
             System.out.println("There has been an error");
         }
 
 
         try{
             System.out.println(Calculator.divide(2,0));
-        } catch (Exception  e){
+        } catch (DivisionByZeroException  e){
             System.out.println("There has been an error");
         }
 

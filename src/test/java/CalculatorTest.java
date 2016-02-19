@@ -30,7 +30,7 @@ public class CalculatorTest {
 
     @Test
     public void testCalculator_divide_testDivisionValidInputs(){
-        try{ assertTrue(Calculator.divide(4,2) == 2);} catch (Exception e){
+        try{ assertTrue(Calculator.divide(4,2) == 2);} catch (DivisionByZeroException e){
             System.out.println("There has been an Arithmetic Error");
         }
 
@@ -41,7 +41,7 @@ public class CalculatorTest {
     @Test
     public void testCalculator_divide_testDivisionByZero(){
 
-       try{ assertTrue(Calculator.divide(2,0) == 0);} catch (Exception e){
+       try{ assertTrue(Calculator.divide(2,0) == 0);} catch (DivisionByZeroException e){
            System.out.println("There has been an Arithmetic Error");
        }
 
