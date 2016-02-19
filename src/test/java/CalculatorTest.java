@@ -47,6 +47,24 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    public void testCalculator_squareRoot_testValidInput(){
+
+        try{ assertTrue(Calculator.squareRoot(4) == 2);} catch (ComplexNumberException e){
+            System.out.println("That number produces a complex number.");
+        }
+
+    }
+
+    @Test
+    public void testCalculator_squareRoot_testInvalidInput(){
+
+        try{ assertTrue(Calculator.squareRoot(-4) == 2);} catch (ComplexNumberException e){
+            System.out.println("That number produces a complex number.");
+        }
+
+    }
+
 
 
 }

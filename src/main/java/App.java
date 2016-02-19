@@ -27,5 +27,18 @@ public class App {
             System.out.println("There has been an error");
         }
 
+        try{
+            System.out.println(Calculator.squareRoot(4));
+        } catch (ComplexNumberException e){
+            System.out.println("There has been an error");
+        }
+
+        try{
+            System.out.println(Calculator.squareRoot(0));
+        } catch (ComplexNumberException e){
+            System.out.println("There has been an error");
+        }
+
+
     }
 }

@@ -20,4 +20,9 @@ public class Calculator{
         return x/y;
     }
 
+    public static double squareRoot(double x) throws ComplexNumberException{
+
+        if(x<= 0){throw new ComplexNumberException();}
+        return Math.sqrt(x);
+    }
 }
